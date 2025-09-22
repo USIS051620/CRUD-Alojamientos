@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <?php $base = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\'); ?>
+    <link rel="icon" type="image/svg+xml" sizes="any" href="<?php echo $base; ?>/img/favicon.svg?v=3">
     <link href="<?php echo $base; ?>/assets/css/style.css" rel="stylesheet">
     <style>.card-img-top{height:200px;object-fit:cover}</style>
   </head>
