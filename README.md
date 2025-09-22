@@ -7,7 +7,7 @@ Proyecto CRUD de Alojamientos: Gestión de Usuarios y Administrador
 ### 📸 Capturas del proyecto:
 
 
-### 💻 PC
+### 💻 PC:
 
 <p style="text-align: center;">
   <img src="./public/img/imagen/Primera.png" alt="Primero" width="400"/>
@@ -15,7 +15,7 @@ Proyecto CRUD de Alojamientos: Gestión de Usuarios y Administrador
   <img src="./public/img/imagen/Tercera.png" alt="Tercero" width="400"/>
 </p>
 
-### 📲 PC
+### 📲 Celular:
 
 <p style="text-align: center;">
   <img src="./public/img/imagen/Cero.png" alt="Cero" width="400"/>
