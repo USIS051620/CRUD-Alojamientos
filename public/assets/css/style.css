@@ -1,0 +1,73 @@
+
+/* Tema profesional oscuro */
+:root {
+  --brand-grad-a: #0f2027;
+  --brand-grad-b: #203a43;
+  --brand-grad-c: #2c5364;
+}
+
+body {
+  background: #0b0f17;
+}
+
+.navbar.bg-gradient-pro {
+  background: linear-gradient(90deg, var(--brand-grad-a), var(--brand-grad-b), var(--brand-grad-c));
+}
+
+.card {
+  border: 0;
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba(0,0,0,.35);
+  background: #121826;
+  color: #e6edf3;
+}
+
+.card .card-title { font-weight: 600; }
+
+.table {
+  --bs-table-bg: #0f1624;
+  --bs-table-striped-bg: #131b2c;
+  --bs-table-striped-color: #e6edf3;
+  --bs-table-hover-bg: #18233a;
+  color: #e6edf3;
+  border-color: rgba(255,255,255,.06);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table thead {
+  background: #0d1422;
+  color: #cfe8ff;
+}
+
+.btn {
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+footer.footer-pro {
+  background: linear-gradient(90deg, #232526, #414345);
+  color: #cfd6dd;
+}
+
+footer.footer-pro a {
+  color: #e6edf3;
+  text-decoration: none;
+}
+
+.form-control, .form-select, textarea {
+  background: #0f1624;
+  color: #e6edf3;
+  border: 1px solid rgba(255,255,255,.12);
+}
+
+.form-control:focus, .form-select:focus, textarea:focus {
+  box-shadow: 0 0 0 .25rem rgba(49,132,253,.25);
+  border-color: #3184fd;
+}
+
+.input-group-text {
+  background: #0f1624;
+  color: #cbd5e1;
+  border-color: rgba(255,255,255,.12);
+}
