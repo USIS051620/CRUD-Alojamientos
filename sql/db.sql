@@ -16,6 +16,7 @@ CREATE TABLE IF NOT EXISTS accommodations (
   id INT AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(255) NOT NULL,
   description TEXT,
+  location VARCHAR(120),
   price DECIMAL(10,2) DEFAULT 0,
   image VARCHAR(255) DEFAULT NULL,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
@@ -33,7 +34,11 @@ CREATE TABLE IF NOT EXISTS user_accommodations (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- Seed: algunos alojamientos de ejemplo
-INSERT INTO accommodations (title,description,price,image) VALUES
-('Casa en la playa','Hermosa casa frente al mar, 3 habitaciones, cocina completa.','120.00','https://picsum.photos/seed/1/600/400'),
-('Departamento céntrico','Departamento a pasos del centro, ideal para parejas.','75.00','https://picsum.photos/seed/2/600/400'),
-('Cabaña en las montañas','Cabaña rústica con vista a la montaña y parrilla.','90.00','https://picsum.photos/seed/3/600/400');
+INSERT INTO accommodations (title,description,location,price,image) VALUES
+('Apartamento moderno','Apartamento equipado con aire acondicionado, cocina integral y balcón.','San Salvador','85.00','https://i.pinimg.com/736x/2f/18/97/2f1897f16249be03f008baa391eb61bf.jpg'),
+('Villa con piscina privada','Villa exclusiva con piscina y terraza, ideal para grupos o familias.','La Libertad','150.00','https://stillframerender.com/wp-content/uploads/2023/11/04-Hotel-boutique-65-Fachada-General-Servicio-de-Renders-fotorrealistas.jpg'),
+('Hotel boutique en el centro','Pequeño hotel con habitaciones modernas, WiFi y desayuno incluido.','San Miguel','110.00','https://stillframerender.com/wp-content/uploads/2023/11/04-Hotel-boutique-65-Fachada-General-Servicio-de-Renders-fotorrealistas.jpg'),
+('Casa familiar amplia','Casa de 5 habitaciones, garaje, jardín y cocina equipada.','Ahuachapán','130.00','https://casasyfachadas.com/wp-content/uploads/2014/08/Vetra-MK2-by-Carlisle-Homes-800x445.jpg'),
+('Royal Decameron Salinitas','Resort todo incluido frente al mar, con piscinas, restaurantes y actividades acuáticas.','Sonsonate','180.00','https://multivacaciones.com/wp-content/uploads/hotel-grand-decameron-salinitas-8.jpg'),
+('Hotel de Montaña Cerro Verde','Hotel ubicado dentro del Parque Nacional Cerro Verde, con vistas al volcán Izalco y Santa Ana.','Santa Ana','95.00','https://www.mitur.gob.sv/wp-content/uploads/2021/10/DJI_0177.jpg'),
+('Hotel Miraflores','Hotel cómodo y con buena vista al mar, ofrece desayuno incluido.','San Miguel','55.00','https://images.trvl-media.com/lodging/7000000/6620000/6614800/6614748/f3653150.jpg?impolicy=resizecrop&amp;rw=575&amp;rh=575&amp;ra=fill');
