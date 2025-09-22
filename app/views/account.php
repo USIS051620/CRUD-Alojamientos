@@ -11,6 +11,7 @@
             <div class="card-body">
               <h5><?php echo htmlspecialchars($a['title']); ?></h5>
               <p class="small"><?php echo htmlspecialchars(substr($a['description'],0,120)); ?>...</p>
+              <p class="mb-1"><strong>Ubicación:</strong> <?php echo htmlspecialchars($a['location']); ?></p>
               <p class="mb-1"><strong>$<?php echo number_format($a['price'],2); ?></strong></p>
               <?php if(in_array($a['id'], $mine_ids)): ?>
                 <button class="btn btn-secondary btn-sm" disabled>Ya agregado</button>

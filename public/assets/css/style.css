@@ -71,3 +71,18 @@ footer.footer-pro a {
   color: #cbd5e1;
   border-color: rgba(255,255,255,.12);
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Esto empuja el footer abajo */
+}
+
+footer {
+  margin-top: auto;
+}

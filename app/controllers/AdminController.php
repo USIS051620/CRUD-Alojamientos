@@ -23,10 +23,11 @@ class AdminController {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $title = trim($_POST['title'] ?? '');
             $description = trim($_POST['description'] ?? '');
+            $location = trim($_POST['location'] ?? '');
             $price = floatval($_POST['price'] ?? 0);
             $image = trim($_POST['image'] ?? '');
             if ($title) {
-                $this->model->create($title,$description,$price,$image);
+                $this->model->create($title,$description,$location,$price,$image);
                 header('Location: index.php?page=admin&action=index');
                 exit;
             } else $error = 'El título es obligatorio.';
@@ -43,10 +44,11 @@ class AdminController {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $title = trim($_POST['title'] ?? '');
             $description = trim($_POST['description'] ?? '');
+            $location = trim($_POST['location'] ?? '');
             $price = floatval($_POST['price'] ?? 0);
             $image = trim($_POST['image'] ?? '');
             if ($title) {
-                $this->model->update($id,$title,$description,$price,$image);
+                $this->model->update($id,$title,$description,$location,$price,$image);
                 header('Location: index.php?page=admin&action=index');
                 exit;
             } else $error = 'El título es obligatorio.';

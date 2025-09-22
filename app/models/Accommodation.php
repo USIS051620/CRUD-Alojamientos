@@ -14,13 +14,13 @@ class Accommodation {
         $stmt->execute([$id]);
         return $stmt->fetch();
     }
-    public function create($title, $description, $price, $image = '') {
-        $stmt = $this->pdo->prepare('INSERT INTO accommodations (title, description, price, image) VALUES (?, ?, ?, ?)');
-        return $stmt->execute([$title, $description, $price, $image]);
+    public function create($title, $description, $location, $price, $image = '') {
+        $stmt = $this->pdo->prepare('INSERT INTO accommodations (title, description, location, price, image) VALUES (?, ?, ?, ?, ?)');
+        return $stmt->execute([$title, $description, $location, $price, $image]);
     }
-    public function update($id, $title, $description, $price, $image = '') {
-        $stmt = $this->pdo->prepare('UPDATE accommodations SET title = ?, description = ?, price = ?, image = ? WHERE id = ?');
-        return $stmt->execute([$title, $description, $price, $image, $id]);
+    public function update($id, $title, $description, $location, $price, $image = '') {
+        $stmt = $this->pdo->prepare('UPDATE accommodations SET title = ?, description = ?, location = ?, price = ?, image = ? WHERE id = ?');
+        return $stmt->execute([$title, $description, $location, $price, $image, $id]);
     }
     public function delete($id) {
         $stmt = $this->pdo->prepare('DELETE FROM accommodations WHERE id = ?');

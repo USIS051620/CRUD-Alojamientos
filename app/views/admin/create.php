@@ -5,6 +5,7 @@
     <form method="post" action="index.php?page=admin&action=create">
       <div class="mb-3"><label class="form-label">Título</label><input class="form-control" name="title" required></div>
       <div class="mb-3"><label class="form-label">Descripción</label><textarea class="form-control" name="description"></textarea></div>
+      <div class="mb-3"><label class="form-label">Ubicación</label><input class="form-control" name="location" required></div>
       <div class="mb-3"><label class="form-label">Precio (USD)</label><input class="form-control" name="price" type="number" step="0.01"></div>
       <div class="mb-3"><label class="form-label">Imagen (URL)</label><input class="form-control" name="image" type="text"></div>
       <button class="btn btn-success">Agregar alojamiento</button>
